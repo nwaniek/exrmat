@@ -1,0 +1,8 @@
+exrmat provides the Matlab function readexr, which is capable of reading
+an RGB OpenEXR file, which is stored in HALF mode (see the OpenEXR
+documentation for more information about this mode).
+
+The function returns the three parts R, G, B in sRGB mode. Note that
+OpenEXR is defined to store all data in linear RGB. Hence, if you want
+to have linear RGB data loaded, simply change the function lin2srgb in
+readexr.cpp
